@@ -39,10 +39,14 @@ module Kaminari
       current_page+1 unless last_page?
     end
     
+    def out_of_bounds?
+      current_page > num_pages
+    end
+
     # Previous page number in the collection
     def prev_page_num
       current_page-1 unless first_page?
     end
-
-  end
+    
+   end
 end
