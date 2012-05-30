@@ -35,7 +35,7 @@ module Kaminari
     end
  
     # Next page number in the collection
-    def next_page_num
+    def next_page
       current_page+1 unless last_page?
     end
     
@@ -44,7 +44,7 @@ module Kaminari
     end
 
     # Previous page number in the collection
-    def prev_page_num
+    def previous_page
       current_page-1 unless first_page?
     end
     
